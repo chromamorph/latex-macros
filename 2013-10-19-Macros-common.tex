@@ -15,6 +15,8 @@
 \newcommand{\dmelse}{\keyword{else\ }}
 \newcommand{\dmbreak}{\keyword{break\ }}
 \newcommand{\dmcontinue}{\keyword{continue\ }}
+\newcommand{\dmparallel}{\keyword{parallel\ }}
+\newcommand{\dmsync}{\keyword{sync\ }}
 \newcommand{\equals}{=}
 \newcommand{\becomes}{\leftarrow}
 \newcommand{\dmcomment}[1]{{\color{gray}\qquad\blacktriangleright\;\textsl{#1}}}
@@ -278,13 +280,14 @@
 \newcommand{\transformationObjectBasisPairs}{\mathbf V}
 \newcommand{\tc}{F}
 \newcommand{\transformationClasses}{\mathcal F}
-\newcommand{\basisSize}{s}
+\newcommand{\basisSize}{\beta}
 \newcommand{\objectBases}{\mathbf B}
 \newcommand{\perms}{\mathbf R}
 \newcommand{\objIndex}{i}
-\newcommand{\objectBasis}{\mathbf b}
-\newcommand{\imageBasis}{\mathbf b'}
-\newcommand{\imgBasisPerm}{\beta}
+\newcommand{\basis}{\mathbf{b}}
+\newcommand{\objectBasis}{{\basis}_{\mathrm{obj}}}
+\newcommand{\imageBasis}{{\basis}_{\mathrm{img}}}
+\newcommand{\imgBasisPerm}{{\basis}_{\mathrm{img}}'}
 \newcommand{\imgIndex}{j}
 \newcommand{\perm}{\bf r}
 
@@ -296,3 +299,23 @@
 \newcommand{\comparator}{\gamma}
 \newcommand{\mergedMTP}{\mathbf{os}}
 \newcommand{\diffSet}{X}
+\newcommand{\numObjectBases}{N_{\mathrm{bases}}}
+\newcommand{\numPerms}{N_{\mathrm{perms}}}
+\newcommand{\permIndex}{r}
+
+%Added13/3/22, commented out 31/3/22
+%\usepackage{amsthm}
+%\theoremstyle{definition}
+%\newtheorem{problem}{Problem}
+%\newtheorem{definition}{Definition}
+%\newtheorem{example}{Example}
+%\theoremstyle{remark}
+%\newtheorem*{small-example}{Example}
+
+%Added 31/3/22
+\newcommand{\algorithm}{\mathcal{A}}
+\newcommand{\encodingVar}{E}
+
+%Added 21/05/2022
+\newcommand{\hashTableSize}{m}
+\newcommand{\numComputations}{\Gamma}
