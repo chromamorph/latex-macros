@@ -1,3 +1,5 @@
+\usepackage{musicography} %for doublesharp and double flat symbols
+
 \newcommand{\colWidth}{\ \ \ \ }
 \newcommand{\firstColWidth}{\ \ \ \ \ \ \ \ }
 \newcommand{\columnDefinitions}{\firstColWidth\=\colWidth\=\colWidth\=\colWidth\=\colWidth\=\colWidth\=\colWidth\=\colWidth\=\colWidth\=\colWidth\=\\}
@@ -64,6 +66,7 @@
 \newcommand{\SIARTECCompress}{\alg{SIARTECCompress}}
 \newcommand{\SIACTTECCompress}{\alg{SIACTTECCompress}}
 \newcommand{\SIARCTTECCompress}{\alg{SIARCTTECCompress}}
+\newcommand{\OPTISIA}{\alg{OPTISIA}}
 \newcommand{\ForthCover}{\alg{ForthCover}}
 \newcommand{\SIA}{\alg{SIA}}
 \newcommand{\SIAMinMax}{\SIA_{\mathrm{MinMax}}}
@@ -82,6 +85,7 @@
 \newcommand{\ScaleXIA}{\alg{ScaleXIA}}
 \newcommand{\RECURSIATEC}{\alg{RecurSIATEC}}
 \newcommand{\RECURSIA}{\alg{RecurSIA}}
+\newcommand{\RecurSIA}{\alg{RecurSIA}}
 \newcommand{\MELISA}{\alg{MELISA}}
 \newcommand{\RRT}{\alg{RRT}}
 
@@ -140,6 +144,7 @@
 \newcommand{\mtpArray}{\sorted{MTPs}}
 \newcommand{\cisArray}{\sorted{CISs}}
 \newcommand{\GetCompressionRatio}{\fun{CR}}
+\newcommand{\GetCompressionFactor}{\fun{CF}}
 \newcommand{\GetCompactness}{\fun{Compactness}}
 \newcommand{\GetPatternSize}{\fun{PatternSize}}
 \newcommand{\GetPatternWidth}{\fun{PatternWidth}}
@@ -197,8 +202,10 @@
 \newcommand{\FindMaxYValue}{\fun{FindMaxYValue}}
 \newcommand{\ScaleFun}{\fun{Scale}}
 \newcommand{\ComputeTECForMTP}{\fun{ComputeTECForMTP}}
-\newcommand{\doublesharp}{\includegraphics[width=6pt]{/Users/dave/Documents/Work/Research/Latex/doublesharp.pdf}}
-\newcommand{\doubleflat}{\flat\flat}
+%\newcommand{\doublesharp}{\includegraphics[width=6pt]{./doublesharp.pdf}}
+\newcommand{\doublesharp}{\musDoubleSharp}
+%\newcommand{\doubleflat}{\flat\flat}
+\newcommand{\doubleflat}{\musDoubleFlat}
 \newcommand{\ymin}{y_{\min}}
 \newcommand{\ymax}{y_{\max}}
 \newcommand{\MTP}{MTP}
@@ -207,7 +214,7 @@
 
 %From ISMIR 2012 paper on MEL
 %\newcommand{\fun}[1]{\mathrm{#1}}
-%\newcommand{\sequence}[1]{\mathbf{#1}}
+\newcommand{\dmsequence}[1]{\mathbf{#1}}
 \newcommand{\noteSetVar}{N}
 \newcommand{\pointVar}{q}
 \newcommand{\vectorSetVar}{V}
@@ -319,3 +326,32 @@
 %Added 21/05/2022
 \newcommand{\hashTableSize}{m}
 \newcommand{\numComputations}{\Gamma}
+
+%Added 13/07/2022 from MML 2019 RecurSIA-RRT paper
+\newcommand{\patternEncoding}{\sorted{e}}
+\newcommand{\pfs}{\sorted F}
+\newcommand{\computePointFreqSet}{\alg{ComputePointFreqSet}}
+\newcommand{\siamTable}{\sorted S}
+\newcommand{\computeSIAMVectorTable}{\alg{ComputeSIAMVectorTable}}
+\newcommand{\removableVectors}{\sorted R}
+\newcommand{\computeRemovableVectors}{\alg{ComputeRemovableVectors}}
+\newcommand{\maxPoints}{\dmvar{M}}
+\newcommand{\computeMaxPoints}{\alg{ComputeMaxPoints}}
+\newcommand{\dmthen}{\keyword{then\ }}
+\newcommand{\computeVectorMaxPointSetPairs}{\alg{ComputeVectorMaxPointSetPairs}}
+\newcommand{\vectorMaxPointSetPairs}{\sorted V}
+\newcommand{\retainedVectors}{\sorted Q}
+\newcommand{\computeRetainedVectors}{\alg{ComputeRetainedVectors}}
+\newcommand{\removeRedundantVectors}{\alg{RemoveRedundantVectors}}
+\newcommand{\pointMultiset}{\sorted C}
+\newcommand{\plusplus}{\mkern-5mu\mathrel{++}}
+\newcommand{\minusminus}{\mkern-5mu\mathrel{--}}
+\newcommand{\remVecPFS}{\sorted X}
+\newcommand{\allCanBeRemoved}{\dmvar{removeAll}}
+\newcommand{\Find}{\alg{Find}}
+\newcommand{\union}{\mathrel{\cup}}
+\newcommand{\dmdo}{\keyword{do\ }}
+
+
+
+
